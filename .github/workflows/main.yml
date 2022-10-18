@@ -13,7 +13,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file ./Dockerfile --tag madhavpasumarthy/dassh
    
-    - name: Docker Login
+    - name: Docker Loginn
       env: 
         Docker_Usr: ${{secrets.DOCKER_USER}}
         Docker_Pwd: ${{secrets.DOCKER_PWD}}
